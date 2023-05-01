@@ -66,6 +66,10 @@ console.log(handlePagination);
 			/>
 			<!-- <NButton type="primary">Primary</NButton> -->
 		</div>
+		<div class="button-container">
+			<button @click="handlePagination.call(null, 'prev')">&lt;</button>
+			<button @click="handlePagination.call(null, 'next')">&gt;</button>
+		</div>
 	</div>
 </template>
 
@@ -111,6 +115,3 @@ console.log(handlePagination);
 	justify-content: center;
 }
 </style>
-
-<!-- <button @click="handlePagination.call(null, 'prev')">Prev</button>
-	<button @click="handlePagination.call(null, 'next')">Next</button> -->
