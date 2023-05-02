@@ -58,6 +58,7 @@ console.log(handlePagination);
 	<div class="container">
 		<div class="cards">
 			<Card
+				v-if="characters"
 				v-for="character in characters"
 				:key="character.id"
 				:name="character.name"
